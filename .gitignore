@@ -1,0 +1,5 @@
+themes/
+public/
+resources/
+*.deb
+!.gitkeep

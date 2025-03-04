@@ -1,0 +1,29 @@
+// Set logo width automatically.
+.navbar-brand {
+  svg {
+    width: auto;
+  }
+}
+
+#td-cover-block-0{
+  background-color: transparent;
+}
+
+#home-title{
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  text-shadow: rgba($color: #ffffff, $alpha: 0.5) 0px 0px 20px;
+}
+
+// https://codepen.io/alvarotrigo/pen/ZEJqBdY
+#home-background {
+  margin-right: calc(-.5* var(--bs-gutter-x));
+  margin-left: calc(-.5* var(--bs-gutter-x));
+  background: radial-gradient(#00196e,#000516);
+  overflow: hidden;
+  -webkit-overflow-Y: hidden;
+  -moz-overflow-Y: hidden;
+  -o-overflow-Y: hidden;
+  overflow-y: hidden;
+}
