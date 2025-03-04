@@ -17,10 +17,9 @@ install-npm-packages:
 	git checkout tags/$(DOCSY_VERSION)
 	npm install
 	# Install required https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/.
-	npm install -g autoprefixer
-	npm install -g postcss-cli
-	npm install -g postcss
-
+	npm install --save-dev autoprefixer
+	npm install --save-dev postcss-cli
+	npm install --save-dev postcss
 
 INCLUDED += hugo # Basename of this makefile.
 .DEFAULT_GOAL := hugo-help # Basename + "-help"

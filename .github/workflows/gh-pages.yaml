@@ -44,10 +44,6 @@ jobs:
           npm install --save-dev autoprefixer
           npm install --save-dev postcss-cli
           npm install --save-dev postcss
-      # - run: |
-      #     npm install --global autoprefixer
-      #     npm install --global postcss-cli
-      #     npm install --global postcss
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
