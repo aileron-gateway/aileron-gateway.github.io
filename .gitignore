@@ -1,6 +1,5 @@
+node_modules/
 public/
 resources/
 *.deb
 !.gitkeep
-
-node_modules/

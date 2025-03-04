@@ -12,14 +12,15 @@ install-tools:
 
 .PHONY: install-npm-packages
 install-npm-packages:
+	npm install
 	cd themes/docsy/
 	git fetch --tags
 	git checkout tags/$(DOCSY_VERSION)
 	npm install
 	# Install required https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/.
-	npm install --save-dev autoprefixer
-	npm install --save-dev postcss-cli
-	npm install --save-dev postcss
+	# npm install --save-dev autoprefixer
+	# npm install --save-dev postcss-cli
+	# npm install --save-dev postcss
 
 INCLUDED += hugo # Basename of this makefile.
 .DEFAULT_GOAL := hugo-help # Basename + "-help"
