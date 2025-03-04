@@ -41,6 +41,7 @@ jobs:
           git fetch --tags
           git checkout tags/v${DOCSY_VERSION}
           npm install
+      - run: |
           npm install --save-dev autoprefixer
           npm install --save-dev postcss-cli
           npm install --save-dev postcss
