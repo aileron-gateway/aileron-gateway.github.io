@@ -2,17 +2,10 @@
 title: AILERON Gateway
 ---
 
+
 <div id="home-background">
-<div class="float-up-light light1"></div>
-<div class="float-up-light light2"></div>
-<div class="float-up-light light3"></div>
-<div class="float-up-light light4"></div>
-<div class="float-up-light light5"></div>
-<div class="float-up-light light6"></div>
-<div class="float-up-light light7"></div>
-<div class="float-up-light light8"></div>
-<div class="float-up-light light9"></div>
 {{< blocks/cover title="" image_anchor="top" height="full" >}}
+
 <h1 id="home-title" class="display-1 mt-0 mt-md-5 pb-4">AILERON Gateway</h1>
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="/docs/">
   Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
