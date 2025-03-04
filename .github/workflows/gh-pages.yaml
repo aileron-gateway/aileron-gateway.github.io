@@ -12,7 +12,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -37,14 +37,10 @@ jobs:
         run: sudo snap install dart-sass
       - name: Install Node.js dependencies
         run: |
-          cd themes/docsy/
-          git fetch --tags
-          git checkout tags/v${DOCSY_VERSION}
           npm install
-      - run: |
-          npm install --save-dev autoprefixer
-          npm install --save-dev postcss-cli
-          npm install --save-dev postcss
+          cd themes/docsy/
+          git fetch --tags && git checkout tags/v${DOCSY_VERSION}
+          npm install
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
