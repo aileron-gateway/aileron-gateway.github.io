@@ -2,3 +2,5 @@ public/
 resources/
 *.deb
 !.gitkeep
+
+node_modules/
