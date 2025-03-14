@@ -22,7 +22,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          path-to-signatures: '.github/cla.json'
+          path-to-signatures: '.cla-signature.json'
           path-to-document: 'https://github.com/aileron-gateway/.github/blob/main/CLA.md'
           branch: 'main'
           allowlist: bot*
