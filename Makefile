@@ -18,6 +18,8 @@ install-npm-packages:
 	# npm install --save-dev postcss
 	npm install
 	cd themes/docsy/
+	ls
+	git branch
 	git fetch --tags --all --force 
 	git tag
 	git checkout tags/$(DOCSY_VERSION)
