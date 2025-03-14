@@ -1,7 +1,7 @@
 
 # See the package.json of the docsy to determine hugo version.
 # https://github.com/google/docsy/blob/main/package.json
-HUGO_VERSION:=0.136.2
+HUGO_VERSION:=0.145.0
 DOCSY_VERSION:=v0.11.0
 
 .PHONY: install-tools
