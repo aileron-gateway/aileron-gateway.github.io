@@ -10,3 +10,4 @@ jobs:
   CLAAssistant:
     uses: aileron-gateway/.github/.github/workflows/cla.yaml@main
     secrets: inherit
+
