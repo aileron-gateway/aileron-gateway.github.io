@@ -12,6 +12,7 @@ Run on local
 - `git clone --recursive  https://github.com/aileron-gateway/aileron-gateway.github.io.git`
 - `npm install`
 - `cd themes/docsy/ && npm install`
+- `cd ../../`
 - `hugo server`
 
 ## Contributing
