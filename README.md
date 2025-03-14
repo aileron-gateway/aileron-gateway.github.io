@@ -1,1 +1,24 @@
-# aileron-gateway.github.io
+# AILERON Gateway Website
+
+## Build on local
+
+Environment setup
+
+- Install [Hugo with Dart Sass](https://gohugo.io/installation/).
+- Install [Node.js with npm](https://nodejs.org/en/download).
+
+Run on local
+
+- `git clone --recursive  https://github.com/aileron-gateway/aileron-gateway.github.io.git`
+- `npm install`
+- `cd themes/docsy/ && npm install`
+- `hugo server`
+
+## Contributing
+
+Any contributions are welcome!
+
+- Opening an issue.
+- Fixing typos.
+- Adding some contents.
+- Improving documentation.
