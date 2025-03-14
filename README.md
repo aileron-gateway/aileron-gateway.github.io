@@ -1,5 +1,7 @@
 # AILERON Gateway Website
 
+**[https://aileron-gateway.github.io/](https://aileron-gateway.github.io/)**
+
 ## Build on local
 
 Environment setup
@@ -19,6 +21,8 @@ Run on local
 ## Contributing
 
 Any contributions are welcome!
+
+e.g.
 
 - Opening an issue.
 - Fixing typos.
