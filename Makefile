@@ -17,13 +17,8 @@ install-npm-packages:
 	# npm install --save-dev postcss-cli
 	# npm install --save-dev postcss
 	npm install
-	cd themes/docsy/
-	ls
-	git branch
-	git fetch --tags --all --force 
-	git tag
-	git checkout tags/$(DOCSY_VERSION)
-	npm install
+	cd themes/docsy/ && git fetch --tags && git checkout tags/$(DOCSY_VERSION)
+	cd themes/docsy/ && npm install
 
 INCLUDED += hugo # Basename of this makefile.
 .DEFAULT_GOAL := hugo-help # Basename + "-help"
