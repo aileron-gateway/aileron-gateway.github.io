@@ -4,7 +4,8 @@
 
 Environment setup
 
-- Install [Hugo with Dart Sass](https://gohugo.io/installation/).
+- Install [Hugo Extended Version Dart Sass](https://gohugo.io/installation/).
+- Install [Install Dart Sass required by Hugo](https://gohugo.io/installation/).
 - Install [Node.js with npm](https://nodejs.org/en/download).
 
 Run on local
