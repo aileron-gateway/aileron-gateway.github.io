@@ -6,12 +6,10 @@ on:
   pull_request_target:
     types: [opened,reopened,synchronize]
 
-permissions: write-all
-# permissions:
-#   actions: write
-#   contents: write
-#   pull-requests: write
-#   statuses: write
+permissions:
+  actions: write
+  pull-requests: write
+  statuses: write
 
 jobs:
   CLAAssistant:
