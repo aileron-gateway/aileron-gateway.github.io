@@ -1,0 +1,100 @@
+# Hugo configurations
+# https://gohugo.io/documentation/
+# https://www.docsy.dev/docs/
+
+# baseURL: 'https://aileron-gateway.github.io/'
+# baseURL: 'https://aileron-gateway.github.io/'
+title: 'AILERON Gateway'
+theme: 'docsy'
+
+# Language setting.
+# https://gohugo.io/content-management/
+# https://gohugo.io/content-management/multilingual/
+contentDir: 'content/en'
+defaultContentLanguage: 'en'
+enableMissingTranslationPlaceholders: true
+enableGitInfo: true
+languages:
+  en:
+    disabled: false
+    languageName: English
+    languageCode: 'en-US'
+    contentDir: 'content/en'
+    weight: 1
+    title: 'AILERON Gateway'
+  ja:
+    disabled: true
+    languageName: 'Japanese(日本語)'
+    languageCode: 'ja-JP'
+    contentDir: 'content/ja'
+    weight: 2
+    title: 'AILERON Gateway'
+
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+    renderer:
+      unsafe: true
+  highlight:
+    style: monokai # Style list https://xyproto.github.io/splash/docs/all.html
+    guessSyntax: true
+
+services:
+  googleAnalytics:
+    id: G-68J9W3Q5NX
+
+params:
+  github_repo: https://github.com/aileron-gateway/aileron-gateway.github.io
+  github_project_repo: https://github.com/aileron-gateway/aileron-gateway
+  github_subdir: ""
+  copyright:
+    authors: AILERON Gateway Authors
+    from_year: 2024
+  offlineSearch: true
+  archived_version: false
+  version: master
+  version_menu: Releases
+  # versions:
+  #   - version: master
+  #     url: 'https://aileron-gateway.github.io/docs'
+  #   - version: v0.0.0
+  #     url: 'https://aileron-gateway.github.io/v0.0.0'
+  ui:
+    showLightDarkModeMenu: true
+    breadcrumb_disable: false
+    navbar_logo: true
+    navbar_translucent_over_cover_disable: false
+    sidebar_search_disable: false
+    sidebar_menu_compact: true
+    sidebar_menu_foldable: true
+    sidebar_cache_limit: 1000
+    ul_show: 1
+    feedback:
+      enable: true
+      'yes': >-
+        Glad to hear it! Please <a href="https://github.com/aileron-gateway/aileron-gateway.github.io/issues/new">tell us how we can improve</a>.
+      'no': >-
+        Sorry to hear that. Please <a href="https://github.com/aileron-gateway/aileron-gateway.github.io/issues/new">tell us how we can improve</a>.
+  links:
+    user:
+      - name: GitHub
+        url: 'https://github.com/aileron-gateway/aileron-gateway'
+        icon: fab fa-github
+        desc: Development takes place here!
+      - name: Stack Overflow
+        url: https://stackoverflow.com/questions/tagged/aileron-gateway
+        icon: fab fa-stack-overflow
+        desc: Practical questions and curated answers.
+
+menu:
+  main:
+    - name: DesignDocs
+      weight: 80
+      url: 'https://aileron-gateway.github.io/aileron-gateway'
+      post: <sup><i class="ps-1 fa-solid fa-up-right-from-square fa-xs" aria-hidden="true"></i></sup>
+    - name: "GitHub"
+      weight: 90
+      url: 'https://github.com/aileron-gateway/aileron-gateway'
+      pre: <i class='fa-brands fa-github'></i>
