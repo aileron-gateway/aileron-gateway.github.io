@@ -2,8 +2,7 @@
 # https://gohugo.io/documentation/
 # https://www.docsy.dev/docs/
 
-# baseURL: 'https://aileron-gateway.github.io/'
-# baseURL: 'https://aileron-gateway.github.io/'
+baseURL: 'https://aileron-gateway.github.io/'
 title: 'AILERON Gateway'
 theme: 'docsy'
 
