@@ -26,7 +26,7 @@ spec: {}
 
 ## Resource Definition
 
-OPAAuthzMiddleware is defined in the [proto/app/v1/authz/opa.proto]({{% github-url "proto/app/v1/authz/opa.proto" %}})
+AuthorizationCodeHandler is defined in the [proto/app/v1/authn/oauth.proto]({{% github-url "proto/app/v1/authn/oauth.proto" %}})
 
 ```proto
 {{% github-raw "proto/app/v1/authn/oauth.proto" %}}

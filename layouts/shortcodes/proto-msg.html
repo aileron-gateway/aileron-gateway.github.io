@@ -4,8 +4,8 @@ https://marcusolsson.dev/how-to-include-code-examples-from-file-with-hugo/
 -->
 
 {{- $base := print .Site.Params.github_gw_raw "refs/heads/" -}}
-{{- $ref := .Page.Params.params.ref -}}
-{{- $dir := or .Page.Params.params.dir "" -}}
+{{- $ref := .Page.Params.ref -}}
+{{- $dir := or .Page.Params.dir "" -}}
 {{- $url := print $base $ref "/" $dir (.Get 0) -}}
 {{- $remote := resources.GetRemote $url -}}
 {{- $content := $remote.Content -}}
