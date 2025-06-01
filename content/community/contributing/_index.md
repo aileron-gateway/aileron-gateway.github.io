@@ -1,7 +1,6 @@
 ---
 title: Contributing
 linkTitle: Contributing
-identifier: Contributing
 type: docs
 categories: []
 tags: []

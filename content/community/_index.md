@@ -1,7 +1,6 @@
 ---
 title: Community
 linkTitle: Community
-identifier: Community
 type: docs
 categories: []
 tags: []

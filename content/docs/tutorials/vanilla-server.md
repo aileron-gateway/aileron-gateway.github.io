@@ -1,13 +1,13 @@
 ---
-title: Access Logging
-linkTitle: Access Logging
+title: "Vanilla Server"
+linkTitle: "Vanilla Server"
 type: docs
 categories: []
 tags: []
 description: ""
 params:
    ref: "main"
-   dir: "examples/access-logging/"
+   dir: "examples/vanilla-server/"
 ---
 
 This page is based on the following example:

@@ -18,14 +18,12 @@ languages:
     disabled: false
     languageName: English
     languageCode: 'en-US'
-    # contentDir: 'content/en'
     weight: 1
     title: 'AILERON Gateway'
   ja:
     disabled: true
     languageName: 'Japanese(日本語)'
     languageCode: 'ja-JP'
-    # contentDir: 'content/ja'
     weight: 2
     title: 'AILERON Gateway'
 
@@ -86,6 +84,9 @@ params:
         url: https://stackoverflow.com/questions/tagged/aileron-gateway
         icon: fab fa-stack-overflow
         desc: Practical questions and curated answers.
+  # Custom parameters
+  github_gw: https://github.com/aileron-gateway/aileron-gateway/
+  github_gw_raw: https://raw.githubusercontent.com/aileron-gateway/aileron-gateway/
 
 menu:
   main:

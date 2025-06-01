@@ -1,13 +1,13 @@
 ---
-title: Access Logging
-linkTitle: Access Logging
+title: "Body size limiting"
+linkTitle: "Body Size Limiting"
 type: docs
 categories: []
 tags: []
 description: ""
 params:
    ref: "main"
-   dir: "examples/access-logging/"
+   dir: "examples/bodylimit/"
 ---
 
 This page is based on the following example:

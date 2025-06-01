@@ -1,13 +1,13 @@
 ---
-title: Access Logging
-linkTitle: Access Logging
+title: "Request/Trace ID"
+linkTitle: "Request/Trace ID"
 type: docs
 categories: []
 tags: []
 description: ""
 params:
    ref: "main"
-   dir: "examples/access-logging/"
+   dir: "examples/tracking/"
 ---
 
 This page is based on the following example:

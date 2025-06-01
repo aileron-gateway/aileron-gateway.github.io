@@ -1,0 +1,7 @@
+{{- $base := print .Site.Params.github_gw_raw "refs/heads/" -}}
+{{- $ref := .Page.Params.params.ref -}}
+{{- $dir := or .Page.Params.params.dir "" -}}
+{{- $url := print $base $ref "/" $dir (.Get 0) -}}
+{{- $remote := resources.GetRemote $url -}}
+{{- $content := $remote.Content -}}
+{{- $content | safeHTML -}}

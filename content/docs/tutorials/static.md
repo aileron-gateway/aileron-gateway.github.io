@@ -1,13 +1,13 @@
 ---
-title: Access Logging
-linkTitle: Access Logging
+title: "Serve Static Contents"
+linkTitle: "Serve Static Contents"
 type: docs
 categories: []
 tags: []
 description: ""
 params:
    ref: "main"
-   dir: "examples/access-logging/"
+   dir: "examples/static/"
 ---
 
 This page is based on the following example:

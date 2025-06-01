@@ -1,0 +1,52 @@
+<!--
+Reference:
+https://marcusolsson.dev/how-to-include-code-examples-from-file-with-hugo/
+-->
+
+{{- $base := print .Site.Params.github_gw_raw "refs/heads/" -}}
+{{- $ref := .Page.Params.params.ref -}}
+{{- $dir := or .Page.Params.params.dir "" -}}
+{{- $url := print $base $ref "/" $dir (.Get 0) -}}
+{{- $remote := resources.GetRemote $url -}}
+{{- $content := $remote.Content -}}
+
+{{- $id := .Get 1 -}}
+
+{{- with $content -}}
+  {{- $snippet := . -}}
+
+  {{- if $id -}}
+    {{- $lines := split $snippet "\n" -}}
+
+    {{- $startTag := printf "message %s {" $id -}}
+    {{- $endTag := printf "}" -}}
+
+    {{- $.Scratch.Set "startl" -1 -}}
+    {{- $.Scratch.Set "endl" -1 -}}
+
+    {{- range $index, $line := $lines -}}
+      {{ $clean := replaceRE " +$" "" $line }}
+      {{- if hasSuffix $clean $startTag -}}
+        {{- $.Scratch.Set "startl" $index -}}
+      {{- else if hasSuffix $clean $endTag -}}
+        {{- $.Scratch.Set "endl" $index -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- $startl := $.Scratch.Get "startl" -}}
+    {{- $endl := $.Scratch.Get "endl" -}}
+
+    {{- if lt $startl 0 -}}
+      {{- errorf "Named snippet is missing START tag: %s" $startTag -}}
+    {{- end -}}
+    {{- if lt $endl 0 -}}
+      {{- errorf "Named snippet is missing END tag: %s" $endTag -}}
+    {{- end -}}
+
+    {{- $snippetLen := add (sub $endl $startl) 1 -}}
+    {{- $includedLines := first $snippetLen (after $startl $lines) -}}
+    {{- $snippet = delimit $includedLines "\n" -}}
+  {{- end -}}
+
+  {{- trim $snippet "\n\r" | safeHTML -}}
+{{- end -}}

@@ -1,13 +1,13 @@
 ---
-title: Access Logging
-linkTitle: Access Logging
+title: "Reverse Proxy"
+linkTitle: "Reverse Proxy"
 type: docs
 categories: []
 tags: []
 description: ""
 params:
    ref: "main"
-   dir: "examples/access-logging/"
+   dir: "examples/reverse-proxy/"
 ---
 
 This page is based on the following example:

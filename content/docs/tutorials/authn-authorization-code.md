@@ -1,13 +1,13 @@
 ---
-title: Access Logging
-linkTitle: Access Logging
+title: "AuthN: OpenID Connect Authorization Code Flow"
+linkTitle: "OIDC Authorization Code"
 type: docs
 categories: []
 tags: []
 description: ""
 params:
    ref: "main"
-   dir: "examples/access-logging/"
+   dir: "examples/authn-authorization-code/"
 ---
 
 This page is based on the following example:

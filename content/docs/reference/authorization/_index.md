@@ -1,11 +1,11 @@
 ---
-title: Documentation
-linkTitle: Documentation
+title: Authorization
+linkTitle: Authorization
 type: docs
 categories: []
 tags: []
 description: ""
-weight: 10
+weight: 2000
 ---
 
 {{% alert title="Info" color="info" %}}

@@ -1,10 +1,9 @@
 ---
-title: Documentation
-linkTitle: Documentation
-identifier: Documentation
+title: Docs
+linkTitle: Docs
 type: docs
 categories: []
-tags: ["features", "overview"]
+tags: []
 description: "AILERON Gateway is a secure and high-performance API Gateway for enterprise systems."
 menu:
   main:
@@ -19,8 +18,8 @@ It focuses on basic features rather than adding many features.
 In particular, we focus on the following 3 domains and aim to support enterprise-graded features.
 
 1. **API Management**
-1. **Security**
-1. **Observability**
+2. **Security**
+3. **Observability**
 
 </br>
 </br>

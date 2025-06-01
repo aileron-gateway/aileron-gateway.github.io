@@ -1,0 +1,9 @@
+{{- $base := print .Site.Params.github_gw_raw "refs/heads/" -}}
+{{- $ref := .Page.Params.params.ref -}}
+{{- $dir := or .Page.Params.params.dir "" -}}
+{{- $url := print $base $ref "/" $dir (.Get 0) -}}
+
+<figure class="{{ .Get "class" }}">
+  <img src="{{ $url }}" alt="{{ .Get "alt" }}" loading="lazy" />
+  {{ with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>

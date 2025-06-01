@@ -1,7 +1,6 @@
 ---
 title: Blog
 linkTitle: Blog
-identifier: Blog
 type: blog
 categories: []
 tags: []
