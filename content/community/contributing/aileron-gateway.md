@@ -2,7 +2,7 @@
 title: AILERON Gateway
 linkTitle: AILERON Gateway
 type: docs
-categories: []
+categories: ["contributing"]
 tags: []
 description: ""
 weight: 5
@@ -12,13 +12,13 @@ weight: 5
 
 This page describes how to get started with developing the [AILERON Gateway](https://github.com/aileron-gateway/aileron-gateway).
 
-This image is the overview of the steps to build and run the AILERON Gateway.
-
-It requires:
+Required tools are:
 
 - [Go](https://go.dev/)
 - [protoc - Protocol Buffer](https://protobuf.dev/)
 - [GNU make](https://www.gnu.org/software/make/) (Optional but recommended)
+
+This image shows the overview of to build and run the AILERON Gateway.
 
 ```mermaid
 stateDiagram-v2
