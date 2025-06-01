@@ -9,7 +9,7 @@ theme: 'docsy'
 # Language setting.
 # https://gohugo.io/content-management/
 # https://gohugo.io/content-management/multilingual/
-contentDir: 'content/en'
+contentDir: 'content'
 defaultContentLanguage: 'en'
 enableMissingTranslationPlaceholders: true
 enableGitInfo: true
@@ -18,14 +18,14 @@ languages:
     disabled: false
     languageName: English
     languageCode: 'en-US'
-    contentDir: 'content/en'
+    # contentDir: 'content/en'
     weight: 1
     title: 'AILERON Gateway'
   ja:
     disabled: true
     languageName: 'Japanese(日本語)'
     languageCode: 'ja-JP'
-    contentDir: 'content/ja'
+    # contentDir: 'content/ja'
     weight: 2
     title: 'AILERON Gateway'
 
@@ -89,10 +89,6 @@ params:
 
 menu:
   main:
-    - name: DesignDocs
-      weight: 80
-      url: 'https://aileron-gateway.github.io/aileron-gateway'
-      post: <sup><i class="ps-1 fa-solid fa-up-right-from-square fa-xs" aria-hidden="true"></i></sup>
     - name: "GitHub"
       weight: 90
       url: 'https://github.com/aileron-gateway/aileron-gateway'
