@@ -2,8 +2,8 @@
 title: Install with Linux Package
 linkTitle: Linux Package
 type: docs
-categories: []
-tags: ["installation"]
+categories: ["installation"]
+tags: []
 description: ""
 weight: 15
 ---
@@ -17,10 +17,10 @@ Notes: `amd64=x86_64`, `386=x86`, `arm7=arm/v7`
 
 |  | amd64 | 386 | arm64 | arm7 | ppc64le | riscv64 | s390x |
 | :- | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| .rpm | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| .deb (Debian) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| .apk (Alpine) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| .pkg.tar.zst (Arch) | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ | ❌ |
+| .rpm | ✅ | ❌ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| .deb (Debian) | ✅ | ❌ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| .apk (Alpine) | ✅ | ❌ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| .pkg.tar.zst (Arch) | ✅ | ❌ | ✅ | ❌ | ❌ | ✅ | ❌ |
 
 {{% alert title="Warning" color="warning" %}}
 Names of the CPU architectures are different depending on each linux distribution communities.

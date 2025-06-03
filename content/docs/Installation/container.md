@@ -2,8 +2,8 @@
 title: Install with Container
 linkTitle: Container
 type: docs
-categories: []
-tags: ["installation"]
+categories: ["installation"]
+tags: []
 description: ""
 weight: 20
 ---

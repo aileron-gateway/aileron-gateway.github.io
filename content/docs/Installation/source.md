@@ -2,8 +2,8 @@
 title: Install from Source Code
 linkTitle: Source Code
 type: docs
-categories: []
-tags: ["installation"]
+categories: ["installation"]
+tags: []
 description: ""
 weight: 5
 ---
