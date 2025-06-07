@@ -1,0 +1,9 @@
+{{- $source := .Get "source" -}}
+{{- $path := .Page.RelPermalink -}}
+{{- $cleanPath := replace $path (printf "/%s/" .Site.Language.Lang) "/" -}}
+{{- $filepath := print $cleanPath $source -}}
+{{ if $filepath }}
+  <img src="{{ $filepath }}" alt="{{ .Get "alt" }}" class="{{ .Get "class" }}">
+{{ else }}
+  <p>Image Not Found: {{ .Get "src" }}</p>
+{{ end }}

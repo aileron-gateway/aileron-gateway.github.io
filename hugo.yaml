@@ -1,14 +1,6 @@
-# Hugo configurations
-# https://gohugo.io/documentation/
-# https://www.docsy.dev/docs/
-
-baseURL: 'https://aileron-gateway.github.io/'
 title: 'AILERON Gateway'
 theme: 'docsy'
 
-# Language setting.
-# https://gohugo.io/content-management/
-# https://gohugo.io/content-management/multilingual/
 contentDir: 'content'
 defaultContentLanguage: 'en'
 enableMissingTranslationPlaceholders: true
@@ -16,13 +8,13 @@ enableGitInfo: true
 languages:
   en:
     disabled: false
-    languageName: English
+    languageName: '🌐English'
     languageCode: 'en-US'
     weight: 1
     title: 'AILERON Gateway'
   ja:
-    disabled: true
-    languageName: 'Japanese(日本語)'
+    disabled: false
+    languageName: '🌐日本語'
     languageCode: 'ja-JP'
     weight: 2
     title: 'AILERON Gateway'
@@ -35,7 +27,7 @@ markup:
     renderer:
       unsafe: true
   highlight:
-    style: monokai # Style list https://xyproto.github.io/splash/docs/all.html
+    style: native # Style list https://xyproto.github.io/splash/docs/all.html
     guessSyntax: true
 
 services:
@@ -51,8 +43,8 @@ params:
     from_year: 2024
   offlineSearch: true
   archived_version: false
-  version: master
-  version_menu: Releases
+  # version: master
+  # version_menu: Releases
   # versions:
   #   - version: master
   #     url: 'https://aileron-gateway.github.io/docs'

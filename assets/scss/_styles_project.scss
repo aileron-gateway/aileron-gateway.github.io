@@ -20,6 +20,10 @@
   overflow: hidden;
 }
 
+nav.foldable-nav .with-child, nav.foldable-nav .without-child  {
+  padding-left: 0.5em;
+}
+
 [data-bs-theme="light"] p code, li code, span code  {
   padding: 0.2em 0.5em;
   border-radius: 4px;
@@ -35,13 +39,15 @@
 }
 
 .td-content {
+  .highlight pre {
+    border-radius: 5px;
+  }
   [data-bs-theme="light"] p code, li code, span code  {
     padding: 0.2em 0.5em;
     border-radius: 4px;
     font-weight: bold;
     background-color: var(--bs-secondary-bg);
   }
-
   [data-bs-theme="dark"] p code, li code, span code  {
     padding: 0.2em 0.5em;
     border-radius: 4px;
@@ -49,5 +55,3 @@
     background-color: var(--bs-secondary-bg);
   }
 }
-
-

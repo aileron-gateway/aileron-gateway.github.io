@@ -1,0 +1,5 @@
+{{ $lang := .Get "lang" | default "en" }}
+{{ $page := .Page }}
+{{ $translations := where $page.Translations "Lang" $lang }}
+{{ $fallbackPage := index (first 1 $translations) 0 }}
+{{ $fallbackPage.Content }}
