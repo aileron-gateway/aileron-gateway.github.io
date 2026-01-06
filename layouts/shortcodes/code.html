@@ -1,0 +1,12 @@
+<!-- Get input params -->
+{{- $source := .Get "source" -}}
+{{ $lang := .Get "lang" }}
+{{ $opts := .Get "opts" }}
+
+<!-- Read codes from file -->
+{{- $pageDir := .Page.File.Dir -}}
+{{- $filepath := path.Join "content" $pageDir $source -}}
+{{- $content := readFile $filepath -}}
+
+<!-- Output codes -->
+{{- highlight (trim $content "\n\r") $lang $opts -}}

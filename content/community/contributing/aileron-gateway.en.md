@@ -30,7 +30,7 @@ stateDiagram-v2
   state "*.proto" as proto
   state "*.pb.go" as pbgo
   state "Config files</br>(.yaml  /.json)" as config
-  
+
   state build {
   proto --> pbgo : protoc
   pbgo --> combine

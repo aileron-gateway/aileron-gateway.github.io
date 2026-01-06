@@ -28,7 +28,7 @@ This is an overview of AILERON Gateway.
 
 </br>
 
-{{% image source="features.svg" %}}
+![features.svg](./features.svg)
 
 ## API Management
 

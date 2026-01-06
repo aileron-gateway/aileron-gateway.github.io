@@ -1,0 +1,16 @@
+<!--
+Reference:
+https://marcusolsson.dev/how-to-include-code-examples-from-file-with-hugo/
+-->
+
+<!-- Get input params -->
+{{- $url := .Get "url" -}}
+{{ $lang := .Get "lang" }}
+{{ $opts := .Get "opts" }}
+
+<!-- Read codes from url -->
+{{- $remote := resources.GetRemote $url -}}
+{{- $content := $remote.Content -}}
+
+<!-- Output codes -->
+{{- highlight (trim $content "\n\r") $lang $opts -}}

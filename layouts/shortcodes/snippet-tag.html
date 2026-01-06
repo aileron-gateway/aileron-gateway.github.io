@@ -1,0 +1,45 @@
+<!--
+Reference:
+https://marcusolsson.dev/how-to-include-code-examples-from-file-with-hugo/
+-->
+
+<!-- Get input params -->
+{{- $source := .Get "source" -}}
+{{- $tag := .Get "tag" -}}
+{{ $lang := .Get "lang" }}
+{{ $opts := .Get "opts" }}
+
+<!-- Read codes from file -->
+{{- $pageDir := .Page.File.Dir -}}
+{{- $filepath := path.Join "content" $pageDir $source -}}
+{{- $content := readFile $filepath -}}
+
+{{- $lines := split $content "\n" -}}
+{{- $startTag := trim (printf "// START %s" $tag) " " -}}
+{{- $endTag := trim (printf "// END %s" $tag) " " -}}
+
+{{- $.Scratch.Set "startl" -1 -}}
+{{- $.Scratch.Set "endl" -1 -}}
+{{- range $index, $line := $lines -}}
+  {{- if hasPrefix $line $startTag -}}
+    {{- $.Scratch.Set "startl" $index -}}
+  {{- else if hasPrefix $line $endTag -}}
+    {{- $.Scratch.Set "endl" $index -}}
+  {{- end -}}
+{{- end -}}
+{{- $startl := $.Scratch.Get "startl" -}}
+{{- $endl := $.Scratch.Get "endl" -}}
+
+{{- if lt $startl 0 -}}
+  {{- errorf "Named snippet is missing START tag: %s" $startTag -}}
+{{- end -}}
+{{- if lt $endl 0 -}}
+  {{- errorf "Named snippet is missing END tag: %s" $endTag -}}
+{{- end -}}
+
+{{- $snippetLen := sub (sub $endl $startl) 2 -}}
+{{- $includedLines := first $snippetLen (after (add $startl 1) $lines) -}}
+{{- $snippet := delimit $includedLines "\n" -}}
+
+<!-- Output codes -->
+{{- highlight (trim $snippet "\n\r") $lang $opts -}}

@@ -1,0 +1,29 @@
+<!--
+Reference:
+https://marcusolsson.dev/how-to-include-code-examples-from-file-with-hugo/
+-->
+
+<!-- Get input params -->
+{{- $source := .Get "source" -}}
+{{- $from := int (.Get "from") -}}
+{{- $to := int (.Get "to") -}}
+{{ $lang := .Get "lang" }}
+{{ $opts := .Get "opts" }}
+
+<!-- Check from,to range -->
+{{- if or (le $from 0) (lt $to $from) -}}
+  {{- errorf "Invalid line range: from=%d to=%d" $from $to -}}
+{{- end -}}
+
+<!-- Read codes from file -->
+{{- $pageDir := .Page.File.Dir -}}
+{{- $filepath := path.Join "content" $pageDir $source -}}
+{{- $content := readFile $filepath -}}
+
+{{- $lines := split $content "\n" -}}
+{{- $snippetLen := add (sub $to $from) 1 -}}
+{{- $includedLines := first $snippetLen (after (sub $from 1) $lines) -}}
+{{- $snippet := delimit $includedLines "\n" -}}
+
+<!-- Output codes -->
+{{- highlight (trim $snippet "\n\r") $lang $opts -}}

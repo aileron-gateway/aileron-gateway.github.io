@@ -28,7 +28,7 @@ AILERON Gatewayは、[Go](https://go.dev/)で書かれた非常にシンプル�
 
 </br>
 
-{{% image source="features.svg" %}}
+![features.svg](./features.svg)
 
 ## API Management
 

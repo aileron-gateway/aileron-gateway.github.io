@@ -1,0 +1,5 @@
+{{- $source := .Get "source" -}}
+{{- $pageDir := .Page.File.Dir -}}
+{{- $filepath := path.Join "content" $pageDir $source -}}
+{{- $content := readFile $filepath -}}
+{{- $content | safeHTML -}}
