@@ -27,14 +27,14 @@ Pull docker images with this command.
 
 ```bash
 VERSION=v1.0.0
-docker pull ghcr.io/aileron-gateway/aileron-gateway/aileron:${TAG}$-debug
+docker pull ghcr.io/aileron-gateway/aileron-gateway/aileron:${VERSION}-debug
 ```
 
 Help message will be shown if the container run without config file.
 
 ```bash
 $ VERSION=v1.0.0
-$ docker run --rm ghcr.io/aileron-gateway/aileron-gateway/aileron:${TAG}$-debug
+$ docker run --rm ghcr.io/aileron-gateway/aileron-gateway/aileron:${VERSION}-debug
 Options :
   -e, --env stringArray    env file path. each line be 'KEY=VALUE'
   -f, --file stringArray   config file or directory path. absolute or relative

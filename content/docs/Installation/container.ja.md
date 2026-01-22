@@ -27,14 +27,14 @@ Dockerイメージは [GitHub Container Registry](https://github.com/orgs/ailero
 
 ```bash
 VERSION=v1.0.0
-docker pull ghcr.io/aileron-gateway/aileron-gateway/aileron:${TAG}$-debug
+docker pull ghcr.io/aileron-gateway/aileron-gateway/aileron:${VERSION}-debug
 ```
 
 設定ファイルを指定せずにコンテナを実行した場合、以下のようなヘルプメッセージが表示されます。
 
 ```bash
 $ VERSION=v1.0.0
-$ docker run --rm ghcr.io/aileron-gateway/aileron-gateway/aileron:${TAG}$-debug
+$ docker run --rm ghcr.io/aileron-gateway/aileron-gateway/aileron:${VERSION}-debug
 Options :
   -e, --env stringArray    env file path. each line be 'KEY=VALUE'
   -f, --file stringArray   config file or directory path. absolute or relative
